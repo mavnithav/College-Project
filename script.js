@@ -88,7 +88,7 @@ function showCourse(course) {
 
     document.getElementById("courseCareer").innerText = career;
 
-    document.getElementById("courseModal").style.display = "block";
+    document.getElementById("courseModal").style.display = "flex";
 
 }
 
