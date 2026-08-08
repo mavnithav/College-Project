@@ -6,6 +6,7 @@
     <title>Smart College Management System</title>
 
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
@@ -19,15 +20,20 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Courses</a></li>
+            <li><a href="#courses">Courses</a></li>
             <li><a href="#">Faculty</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 </header>
 
+
+<!-- HOME SECTION -->
+
 <section class="hero">
+
     <div class="content">
+
         <h1>Welcome To Smart College</h1>
 
         <p>
@@ -36,87 +42,209 @@
             for students and faculty.
         </p>
 
-        <a href="#" class="btn">Explore Courses</a>
+        <a href="#courses" class="btn">Explore Courses</a>
+
     </div>
+
 </section>
 
+
+<!-- ABOUT SECTION -->
+
 <section class="about">
+
     <h2>About Our College</h2>
 
     <p>
         Smart College provides quality education with experienced faculty,
         modern classrooms, laboratories and placement support.
     </p>
+
 </section>
 
-<section class="courses">
+
+<!-- COURSES SECTION -->
+
+<section class="courses" id="courses">
+
     <h2>Our Courses</h2>
 
     <div class="course-box">
 
-        <div class="card">
+
+        <!-- COMPUTER SCIENCE -->
+
+        <div class="card" onclick="showCourse('cse')">
+
             <i class="fas fa-laptop-code"></i>
+
             <h3>Computer Science</h3>
-            <p>Programming, AI, Data Science and Web Development.</p>
+
+            <p>
+                Programming, AI, Data Science
+                and Web Development.
+            </p>
+
         </div>
 
-        <div class="card">
+
+        <!-- ELECTRONICS -->
+
+        <div class="card" onclick="showCourse('ece')">
+
             <i class="fas fa-microchip"></i>
+
             <h3>Electronics</h3>
-            <p>Embedded Systems and Digital Electronics.</p>
+
+            <p>
+                Embedded Systems and
+                Digital Electronics.
+            </p>
+
         </div>
 
-        <div class="card">
+
+        <!-- MECHANICAL -->
+
+        <div class="card" onclick="showCourse('mech')">
+
             <i class="fas fa-cogs"></i>
+
             <h3>Mechanical</h3>
-            <p>Design, Manufacturing and Automation.</p>
+
+            <p>
+                Design, Manufacturing
+                and Automation.
+            </p>
+
         </div>
 
     </div>
+
 </section>
 
+
+<!-- COURSE INFORMATION POPUP -->
+
+<div id="courseModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeCourse()">&times;</span>
+
+        <h2 id="courseTitle"></h2>
+
+        <p id="courseDescription"></p>
+
+        <h3>Duration</h3>
+
+        <p id="courseDuration"></p>
+
+        <h3>Major Subjects</h3>
+
+        <p id="courseSubjects"></p>
+
+        <h3>Career Opportunities</h3>
+
+        <p id="courseCareer"></p>
+
+    </div>
+
+</div>
+
+
+<!-- FACULTY SECTION -->
+
 <section class="faculty">
+
     <h2>Our Faculty</h2>
 
     <div class="teachers">
 
+
         <div class="teacher">
-            <img src="https://via.placeholder.com/200" alt="Faculty 1">
+
+            <img src="https://via.placeholder.com/200"
+                 alt="Faculty 1">
+
             <h3>Dr. Rahul</h3>
+
             <p>Head of Computer Science</p>
+
         </div>
 
+
         <div class="teacher">
-            <img src="https://via.placeholder.com/200" alt="Faculty 2">
+
+            <img src="https://via.placeholder.com/200"
+                 alt="Faculty 2">
+
             <h3>Dr. Priya</h3>
+
             <p>Electronics Professor</p>
+
         </div>
 
+
         <div class="teacher">
-            <img src="https://via.placeholder.com/200" alt="Faculty 3">
+
+            <img src="https://via.placeholder.com/200"
+                 alt="Faculty 3">
+
             <h3>Dr. Arjun</h3>
+
             <p>Mechanical Professor</p>
+
         </div>
 
     </div>
+
 </section>
+
+
+<!-- CONTACT SECTION -->
 
 <section class="contact">
 
     <h2>Contact Us</h2>
 
     <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
+
+        <input
+            type="text"
+            placeholder="Your Name"
+            required>
+
+        <input
+            type="email"
+            placeholder="Email"
+            required>
+
+        <textarea
+            placeholder="Message"
+            rows="5"
+            required></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
     </form>
 
 </section>
 
+
+<!-- FOOTER -->
+
 <footer>
-    <p>&copy; 2026 Smart College Management System | All Rights Reserved.</p>
+
+    <p>
+        &copy; 2026 Smart College Management System |
+        All Rights Reserved.
+    </p>
+
 </footer>
+
 
 <script src="script.js"></script>
 
