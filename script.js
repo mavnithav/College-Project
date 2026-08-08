@@ -88,7 +88,16 @@ function showCourse(course) {
 
     document.getElementById("courseCareer").innerText = career;
 
-    document.getElementById("courseModal").style.display = "flex";
+   const modal = document.getElementById("courseModal");
+
+modal.style.display = "flex";
+modal.style.alignItems = "center";
+modal.style.justifyContent = "center";
+modal.style.position = "fixed";
+modal.style.left = "0";
+modal.style.top = "0";
+modal.style.width = "100%";
+modal.style.height = "100%";
 
 }
 
