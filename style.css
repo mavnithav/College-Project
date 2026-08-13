@@ -345,13 +345,93 @@ footer{
 
 @media (max-width: 600px) {
 
+    header {
+        padding: 15px 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .hero {
+        height: 70vh;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .courses,
+    .faculty,
+    .about,
+    .contact {
+        padding: 40px 20px;
+    }
+
+    .course-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .teachers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teacher {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .modal {
+        padding: 10px;
+    }
+
     .modal-content {
         width: 95%;
-        padding: 25px;
+        max-height: 90vh;
+        padding: 20px;
+        overflow-y: auto;
     }
 
     .modal-content h2 {
         font-size: 22px;
     }
 
+    .modal-content h3 {
+        font-size: 17px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
 }
