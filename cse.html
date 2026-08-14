@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science & Engineering</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+
+            background:
+                linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                url("https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .course-card {
+            background: white;
+            width: 700px;
+            max-width: 100%;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.4);
+        }
+
+        h1 {
+            color: #1554a6;
+            margin-top: 0;
+            font-size: 32px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
+        .description {
+            color: #555;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        h3 {
+            color: #1554a6;
+            margin-bottom: 8px;
+        }
+
+        .info {
+            background: #f1f5fa;
+            border-left: 4px solid #1554a6;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .back-btn {
+            display: inline-block;
+            text-decoration: none;
+            background: #1554a6;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 6px;
+            margin-top: 5px;
+        }
+
+        .back-btn:hover {
+            background: #0d3d7c;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .course-card {
+                padding: 22px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            .description {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="course-card">
+
+        <h1>Computer Science & Engineering</h1>
+
+        <hr>
+
+        <p class="description">
+            Computer Science focuses on programming, software development,
+            artificial intelligence and modern computer technologies.
+        </p>
+
+        <h3>Duration</h3>
+        <div class="info">
+            4 Years
+        </div>
+
+        <h3>Major Subjects</h3>
+        <div class="info">
+            Python, Java, Data Structures, DBMS, Web Development,
+            Artificial Intelligence
+        </div>
+
+        <h3>Career Opportunities</h3>
+        <div class="info">
+            Software Developer, Web Developer, Data Analyst, AI Engineer
+        </div>
+
+        <a href="index.html#courses" class="back-btn">
+            ← Back to Courses
+        </a>
+
+    </div>
+
+</body>
+</html>
